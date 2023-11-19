@@ -28,5 +28,5 @@ modules:
       - install -Dm00644 $FLATPAK_ID.appdata.xml $FLATPAK_DEST/share/appdata/$FLATPAK_ID.appdata.xml
     sources:
       - type: archive
-        url: https://gitlab.com/imatt-foss/clipqr/-/archive/v1.0.1/clipqr-v1.0.1.tar.gz
-        sha256: 23f9ddd8c7c2e22087ecf9d2fd1ca34ae101efc247c1f72357ff36b659420f5c
+        url: https://gitlab.com/imatt-foss/clipqr/-/archive/v1.1.0/clipqr-v1.1.0.tar.gz
+        sha256: 8d39ef17b520d0f4d27dcadf33c97c9e597e4478acf0427c1254e1267cf8ad10
