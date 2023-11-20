@@ -14,6 +14,8 @@ finish-args:
 
 build-options:
   append-path: /usr/lib/sdk/golang/bin
+  build-args:
+    - --share=network
   env:
     - GOBIN=/app/bin
 
