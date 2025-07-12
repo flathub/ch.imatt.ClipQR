@@ -25,6 +25,7 @@
   <screenshots>
     <screenshot type="default">
       <image>https://gitlab.com/imatt-foss/clipqr/-/raw/master/screenshot.png</image>
+      <caption>Screenshot of ClipQR, it has two buttons, one to scan QR codes on screen, the other to scan from camera</caption>
     </screenshot>
   </screenshots>
 
