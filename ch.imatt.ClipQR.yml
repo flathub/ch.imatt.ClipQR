@@ -22,14 +22,18 @@ modules:
     buildsystem: simple
     build-commands:
       - go build -o clipqr
-      - install -Dm00755 clipqr $FLATPAK_DEST/bin/clipqr
-      - install -Dm00644 icon.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
-      - install -Dm00644 $FLATPAK_ID.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop
-      - install -Dm00644 $FLATPAK_ID.appdata.xml $FLATPAK_DEST/share/appdata/$FLATPAK_ID.appdata.xml
+      - install -Dm00755 clipqr ${FLATPAK_DEST}/bin/clipqr
+      - install -Dm00644 icon.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+      - install -Dm00644 ${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm00644 ${FLATPAK_ID}.appdata.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.appdata.xml
     sources:
       - type: archive
         url: https://gitlab.com/imatt-foss/clipqr/-/archive/master/clipqr-master.tar.gz
-        sha256: e75c5910d0730d1fcfb2ca037bbed79f25576943e83cf793801748f6a0aea766
+        sha256: f701ff67e41cf0f88ae5fe4e5b87a596eb73635d97547ae1d965683798bd9fa9
+      - type: file
+        path: ch.imatt.ClipQR.desktop
+      - type: file
+        path: ch.imatt.ClipQR.appdata.xml
       - dest: vendor
         path: modules.txt
         type: file
