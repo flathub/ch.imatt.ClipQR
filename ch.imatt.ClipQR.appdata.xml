@@ -35,6 +35,14 @@
   <content_rating type="oars-1.1" />
 
   <releases>
+    <release version="1.4.0" date="2026-06-12">
+      <description>
+        <p>Native Wayland support, no longer relying on XWayland</p>
+        <p>X11 support dropped</p>
+        <p>Minor fixes and refactor for packaging</p>
+        <p>Update dependencies</p>
+      </description>
+    </release>
     <release version="1.3.0" date="2024-08-22">
       <description>
         <p>Fix wayland issues</p>
